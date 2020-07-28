@@ -2,6 +2,13 @@
   "name": "@mars-st/cli",
   "version": "1.0.2",
   "description": "",
+  "homepage": "https://github.com/mars-st/tools/tree/master/cli",
+  "bugs": "https://github.com/mars-st/tools/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mars-st/tools",
+    "directory": "cli"
+  },
   "scripts": {
     "build": "pika build",
     "pub": "pika publish",
