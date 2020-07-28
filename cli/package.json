@@ -5,7 +5,7 @@
   "scripts": {
     "build": "pika build",
     "pub": "pika publish",
-    "test": "npx npm-run-all --parallel test:*",
+    "test": "npm-run-all --parallel test:*",
     "test:lint": "eslint ./src --quiet -c ./.eslintrc.js",
     "test:unit": "jest --ci --passWithNoTests",
     "version": "npm run build"
@@ -69,6 +69,8 @@
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0"
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "jest": "^26.1.0",
+    "npm-run-all": "^4.1.5"
   }
 }

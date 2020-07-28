@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import S3 from 'aws-sdk/clients/s3';
+// import S3 from 'aws-sdk/clients/s3';
 import path from 'path';
 import parseArgs from 'yargs-parser';
 import { GraphQLClient } from 'graphql-request';
@@ -10,14 +10,14 @@ import Session from './session';
 const API_URL = 'http://localhost:4000';
 // const API_URL = 'http://mars.st/api';
 
-const BUCKET_URL = 'mars-capture-dev';
+// const BUCKET_URL = 'mars-capture-dev';
 // const BUCKET_URL = 'http://mars.st/bucket';
 
-const s3 = new S3({
-  params: {
-    Bucket: BUCKET_URL,
-  },
-});
+// const s3 = new S3({
+//   params: {
+//     Bucket: BUCKET_URL,
+//   },
+// });
 
 export default async function run(args) {
   try {
@@ -86,18 +86,18 @@ export default async function run(args) {
           console.log(artifacts);
           console.log(chalk.green('ARTIFACTS READY'));
 
-  //         const file = fs.createReadStream(buildArtifact);
-  //         const result = await new Promise((resolve, reject) => {
-  //           s3.upload({
-  //             Key: 'build.zip',
-  //             Body: file,
-  //           }, (err, data) => {
-  //             if (err) return reject(err);
-  //             return resolve(data);
-  //           });
-  //         });
-  // 
-  //         console.log(result);
+          // const file = fs.createReadStream(buildArtifact);
+          // const result = await new Promise((resolve, reject) => {
+          //   s3.upload({
+          //     Key: 'build.zip',
+          //     Body: file,
+          //   }, (err, data) => {
+          //     if (err) return reject(err);
+          //     return resolve(data);
+          //   });
+          // });
+
+          // console.log(result);
 
           // Run completion hooks
           await Promise.all(
